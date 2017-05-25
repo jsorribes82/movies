@@ -56,3 +56,4 @@ gem "font-awesome-rails"
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "bcrypt-ruby", '~> 3.0.0'
+gem 'actioncable', '~> 5.0', '>= 5.0.3'

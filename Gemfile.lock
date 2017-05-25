@@ -165,6 +165,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  actioncable (~> 5.0, >= 5.0.3)
   bcrypt-ruby (~> 3.0.0)
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
