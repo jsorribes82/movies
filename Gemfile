@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-script-source', '1.8.0'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
