@@ -7,6 +7,7 @@ end
 
 gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -53,6 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "font-awesome-rails"
 gem 'devise', '~> 4.1', '>= 4.1.1'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "bcrypt-ruby", '~> 3.0.0'
 gem 'actioncable', '~> 5.0', '>= 5.0.3'
