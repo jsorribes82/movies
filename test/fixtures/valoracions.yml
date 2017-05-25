@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comentari: MyText
+  data_comentari: 2017-05-25
+  puntuacio: 1
+
+two:
+  comentari: MyText
+  data_comentari: 2017-05-25
+  puntuacio: 1
