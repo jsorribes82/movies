@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'statics/index'
 
   get 'statics/about'
-  get '/about' => 'static#about', :as => :about
+  get '/about' => 'statics#about', :as => :about
 	root :to => "statics#index"
   devise_for :users
   get 'peliculas/index'
