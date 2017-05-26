@@ -56,3 +56,4 @@ gem "font-awesome-rails"
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'actioncable', '~> 5.0', '>= 5.0.3'
+gem 'autoprefixer-rails'
