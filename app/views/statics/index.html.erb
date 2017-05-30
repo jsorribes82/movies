@@ -35,6 +35,19 @@
 
     }
   });
+
+    $('#btnface').click(function(){
+      window.open('https://www.facebook.com','_blank');
+});
+    $('#btnyoutube').click(function(){
+   window.open('https://www.youtube.com','_blank');
+});
+    $('#btntwitter').click(function(){
+   window.open('https://twitter.com/','_blank');
+});
+    $('#btngoogleplus').click(function(){
+   window.open('https://plus.google.com','_blank');
+});
 });
   
 </script>
@@ -104,10 +117,10 @@
    <!-- navbar icones -->
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-        <li> <i class="fa fa-facebook-official font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
-        <li> <i class="fa fa-twitter-square font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
-        <li> <i class="fa fa-youtube-play font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
-        <li> <i class="fa fa-google-plus-square font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
+        <li> <i id="btnface" class="fa fa-facebook-official font_awesiwe icons_pading" aria-hidden="true"></i> </li> 
+        <li> <i id="btntwitter" class="fa fa-twitter-square font_awesiwe icons_pading" aria-hidden="true"></i> </li> 
+        <li> <i id="btnyoutube" class="fa fa-youtube-play font_awesiwe icons_pading" aria-hidden="true"></i> </li> 
+        <li> <i id="btngoogleplus" class="fa fa-google-plus-square font_awesiwe icons_pading" aria-hidden="true"></i> </li> 
       </ul>
     </div><!-- /.navbar-icones -->
   </div><!-- /.container-fluid -->
