@@ -1,6 +1,58 @@
+<style type="text/css">
+@media (min-width: 992px){
+  .columna2{
+    margin-bottom: 12px
+  }
+  .columna3{
+    margin-bottom: 15px
+  }
+}
+@media (min-width: 1200px){
+  .columna2{
+    margin-bottom: 190px
+  }
+  .columna3{
+    margin-bottom: 30px
+  }
+}
+</style>
+<script type="text/javascript">
+  $(window).ready(function(){
+    $('#anima_logo').hover(
+      function() {
+        $( this ).addClass( "animated infinite bounce" );
+      }, function() {
+        $( this ).removeClass( "animated infinite bounce" );
+      }
+    );
+
+    $(document).on("scroll", function(){
+    var sv = $(document).scrollTop();
+    if (sv>50){
+      $('#text1').addClass( "animated infinite headShake" );
+    }else{
+      $('#text1').removeClass( "animated infinite headShake" );
+
+    }
+  });
+});
+  
+</script>
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container-fluid color-navbar">
+    
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li>Logged in as <strong><%= current_user.email %></strong>.</li>
+          <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+        <% else %>
+          <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link boto_log_in'  %></li>
+          <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -8,13 +60,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a id="anima_logo" class="navbar-brand" href="#"><img src="https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/potato_titol.png"></a>
     </div>
+    <div class="collapse navbar-collapse collapse_marge_esquerra" id="bs-example-navbar-collapse-1">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -33,7 +84,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
@@ -48,10 +99,226 @@
           </ul>
         </li>
       </ul>
+      
+
+    </div><!-- /.navbar-collapse -->
+   
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <li> <i class="fa fa-facebook-official font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
+        <li> <i class="fa fa-twitter-square font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
+        <li> <i class="fa fa-youtube-play font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
+        <li> <i class="fa fa-google-plus-square font_awesiwe icons_pading" aria-hidden="true"><a class="nabvar-link" href="#"></a></i> </li> 
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<%= link_to "Nosotros", about_path %> <br/>
-<%=link_to "Login", new_user_session_path %> <br/>
-<%=link_to "Sign up", new_user_registration_path %> <br/>
+
+<!-- fi barra navegacio -->
+
+<!-- inici body -->
+<div class="container body">
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-xs-12">
+    <!-- inici slider1 -->
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel11" data-slide-to="1"></li>
+            <li data-target="#myCarousel11" data-slide-to="2"></li>
+            <li data-target="#myCarousel11" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://www.hdfondos.eu/preview/get_photo/205494/800/600" alt="Pelicula 1">
+            </div>
+
+            <div class="item">
+              <img src="http://1.bp.blogspot.com/-8sSzu1d-YIo/UNdr0dAM3wI/AAAAAAAArM0/OncgkUnMjf8/s1600/800x600+Wallpaper+-+Sombras+Tenebrosas+-+sombras_tenebrosas_dark_shadows_wallpaper-hd_1920x1080_carolyn_sotddard.jpg" alt="Pelicula 2">
+            </div>
+
+            <div class="item">
+              <img src="http://www.wallpapersxl.com/wallpapers/800x600/adad/209797/adad-peliculas-209797.jpg" alt="Pelicula 3">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/172014/800/600" alt="Pelicula 4">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Seguent</span>
+          </a>
+      </div>
+    <!-- fi slider1 -->
+  </div>
+  <div class="col-lg-4 col-md-6 hidden-xs hidden-sm">
+    <!-- inici slider1 -->
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+            <li data-target="#myCarousel2" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://www.hdfondos.eu/preview/get_photo/157287/800/600" alt="Pelicula 1">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/70270/800/600" alt="Pelicula 2">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/3879/800/600" alt="Pelicula 3">
+            </div>
+
+            <div class="item">
+              <img src="http://www.fonditos3d.com/800x600/peliculas-3d.jpg" alt="Pelicula 4">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Seguent</span>
+          </a>
+      </div>
+    <!-- fi slider1 -->
+    
+  </div>
+  <div class="col-lg-4 hidden-md hidden-xs hidden-sm">
+    <!-- inici slider1 -->
+        <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li>
+            <li data-target="#myCarousel3" data-slide-to="2"></li>
+            <li data-target="#myCarousel3" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://www.hdfondos.eu/preview/get_photo/555090/800/600" alt="Pelicula 1">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/194495/800/600" alt="Pelicula 2">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/579490/800/600" alt="Pelicula 3">
+            </div>
+
+            <div class="item">
+              <img src="http://www.hdfondos.eu/preview/get_photo/487006/800/600" alt="Pelicula 4">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Seguent</span>
+          </a>
+      </div>
+    <!-- fi slider1 -->
+  </div>
+</div>
+<!-- fi row -->
+  <h1 id="text1">TRAILERS</h1>
+  <div class="row ">
+    <div class="col-lg-5 col-md-6 col-xs-4">
+      <img class="img-responsive " src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-4">
+     <div class="row columna2">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+      </div>
+     </div>
+     <div class="row columna2">
+      <div class="col-lg-12 col-md-6 hidden-xs hidden-sm">
+        <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+      </div>
+      <div class="hidden-lg col-md-6 hidden-xs hidden-sm">
+        <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+      </div>
+     </div>
+     <div class="row columna2">
+      <div class="hidden-lg col-md-6 hidden-xs hidden-sm">
+        <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+      </div>
+      <div class="hidden-lg col-md-6 hidden-xs hidden-sm">
+        <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+      </div>
+     </div>
+    </div>
+    <div class="col-lg-4 col-md-2 col-xs-4">
+      <div class="row columna3">
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+        <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+      </div>
+      <div class="row columna3">
+        <div class="col-lg-6 col-md-12 hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+        <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+      </div>
+      <div class="row columna3">
+        <div class="col-lg-6 col-md-12 hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+        <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+      </div>
+      <div class="row columna3">
+        <div class="col-lg-6 col-md-12 hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+        <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
+          <img class="img-responsive" src="http://www.lahuertinadetoni.es/wp-content/uploads/2015/06/patatas.jpg">
+        </div>
+      </div>
+    </div>
+    
+
+</div>
+</div>
+<!-- fi body -->
+
+  <div class="container-fluid footer">
+    <%= link_to "Nosotros", about_path, :class => "block-center" %> <br/>
+  </div>
+
+
 

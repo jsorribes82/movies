@@ -1,3 +1,60 @@
 // Place all the styles related to the statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.color-navbar{
+    background-color: #D79D37;
+    // color: #000000;
+  }
+ .navbar-brand{
+ 	margin: -65px -20px;
+
+ }
+ @media (max-width: 768px){
+	 .navbar-header{
+	 	padding-top: 30px;
+	    padding-bottom: 30px;
+	 }
+}
+ .navbar-collapse{
+ 	padding-left: 182px !important;
+ }
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #8A5004 !important;
+    color: white !important;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #000000 !important;
+    font-weight:900
+
+}
+.font_awesiwe{
+	font-size: 20px !important;
+    color: white;
+}
+.font_awesiwe:hover,font_awesiwe:focus{
+    color: black;
+    font-size: 30px !important;
+}
+.icons_pading{
+	padding-left: 16px;
+}
+.footer{
+	height: 90px;
+	padding-top: 33px;
+    background-color: black;
+    margin-left: -10px !important;
+	margin-right: -10px !important;
+}
+.boto_log_in{
+	background-color: #F2DF7E;
+	border: 2px solid black;
+    border-radius: 25px;
+}
+body{
+	border-left: 10px solid #D79D37;
+	border-right: 10px solid #D79D37;
+}
+.navbar{
+	border: 1px solid #D79D37 !important;
+	border-radius: 0px !important;
+}
