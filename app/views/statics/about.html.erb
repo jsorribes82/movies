@@ -1,17 +1,31 @@
+<script type="text/javascript">
+	$(window).ready(function(){
+	$( "#imatgeJordi" ).hover(function() {
+	  
+	   $( "#imatgeJordi" ).attr("src","https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica_ulleres2.jpg");
+	  
+	},function() {
+	  
+	   $( "#imatgeJordi" ).attr("src","https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica.JPG");
+	  
+	}
+);
+	});
+</script>
 <div class="body">
 	<div class="container">
 	<h1>Sobre nosaltres</h1>
 	<div class="row">
 		<h3 class="text-center">Desenvolupador</h3>
 		<div class="col-lg-6 col-md-8 col-xs-12">
-			<img class="img-responsive center-block borde_foto" src="http://res.cloudinary.com/losorry/image/upload/c_scale,q_48,w_1323/v1490872817/20150712_202045_ahz7xo.jpg">
+			<img id="imatgeJordi" class="img-responsive center-block borde_foto" src="https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica.JPG">
 		</div>
 		<div class="col-lg-4 col-md-2 col-xs-10">
 			<p class="text-justify">En <strong>Jordi Sorribes</strong> es fill de Balaguer i porta 1 any com a software developer. Es aficionat a les pelicules i es per aixo que va crear aquesta web, per tenir informació sobre els gustos de la gent. Li agrada la cuina i no descarta la proxima pagina web sigui de temes culinaris.</p>
 			
 		</div>
 		<div class="col-xs-2">
-			<div class="btn-group-vertical" role="group" aria-label="botons icones contacte">
+			<div class="btn-group-vertical " role="group" aria-label="botons icones contacte">
 				<button type="button" class="btn btn-default"><a href="https://www.facebook.com"><i class="fa fa-facebook-official font_awesiwe_about" aria-hidden="true"></i></a></button>
 				<button type="button" class="btn btn-default"><a href="https://www.youtube.com"><i class="fa fa-youtube-play font_awesiwe_about" aria-hidden="true"></i></a></button>
 				<button type="button" class="btn btn-default"><a href="https://twitter.com"><i class="fa fa-twitter-square font_awesiwe_about" aria-hidden="true"></i></a></button>
