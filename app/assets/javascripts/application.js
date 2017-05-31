@@ -15,3 +15,40 @@
 // = require turbolinks
 // = require_tree .
 // = require bootstrap-sprockets
+$(window).load(function(){
+	$("#modalCargando").modal('toggle');
+});
+$(document).ready(function(){
+	$("#modalCargando").modal();
+
+    $('#anima_logo').hover(
+      function() {
+        $( this ).addClass( "animated infinite bounce" );
+      }, function() {
+        $( this ).removeClass( "animated infinite bounce" );
+      }
+    );
+
+    $(document).on("scroll", function(){
+    var sv = $(document).scrollTop();
+    if (sv>50){
+      $('#text1').addClass( "animated infinite headShake" );
+    }else{
+      $('#text1').removeClass( "animated infinite headShake" );
+
+    }
+  });
+
+    $('#btnface').click(function(){
+      window.open('https://www.facebook.com','_blank');
+});
+    $('#btnyoutube').click(function(){
+      window.open('https://www.youtube.com','_blank');
+});
+    $('#btntwitter').click(function(){
+      window.open('https://twitter.com/','_blank');
+});
+    $('#btngoogleplus').click(function(){
+      window.open('https://plus.google.com','_blank');
+});
+});

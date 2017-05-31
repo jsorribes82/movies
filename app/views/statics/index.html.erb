@@ -2,42 +2,24 @@
 
 </style>
 <script type="text/javascript">
-  $(window).ready(function(){
-    $('#anima_logo').hover(
-      function() {
-        $( this ).addClass( "animated infinite bounce" );
-      }, function() {
-        $( this ).removeClass( "animated infinite bounce" );
-      }
-    );
-
-    $(document).on("scroll", function(){
-    var sv = $(document).scrollTop();
-    if (sv>50){
-      $('#text1').addClass( "animated infinite headShake" );
-    }else{
-      $('#text1').removeClass( "animated infinite headShake" );
-
-    }
-  });
-
-    $('#btnface').click(function(){
-      window.open('https://www.facebook.com','_blank');
-});
-    $('#btnyoutube').click(function(){
-      window.open('https://www.youtube.com','_blank');
-});
-    $('#btntwitter').click(function(){
-      window.open('https://twitter.com/','_blank');
-});
-    $('#btngoogleplus').click(function(){
-      window.open('https://plus.google.com','_blank');
-});
-});
   
 </script>
 
 <!-- inici body -->
+<div class="modal " id="modalCargando" >
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center">Cargando</h4>
+        </div>
+        <div class="modal-body">
+         <img class="img-responsive center-block" src="http://4.bp.blogspot.com/-N79QbQUJDgA/UGNwliznv1I/AAAAAAAACpY/Mi8MYQ5jVeQ/s1600/cargandoPaginaWeb.gif">
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="body">
   <div class="container">
     <div class="row">
