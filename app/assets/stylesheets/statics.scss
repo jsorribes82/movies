@@ -65,8 +65,13 @@
 	padding-top: 33px;
 	padding-bottom: 82px;
     background-color: black;
-    margin-left: -10px !important;
-	margin-right: -10px !important;
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+    border-radius: 20px;
+}
+.color_abans_footer{
+  background-color: #D79D37;
+  
 }
 .footer p, .footer a{
 	text-align: center;
@@ -85,6 +90,7 @@
 .body{
 	border-left: 10px solid #D79D37;
 	border-right: 10px solid #D79D37;
+	border-bottom: 10px solid #D79D37;
 	margin-top: -20px;
 	padding-bottom: 54px;
 	padding-top: 20px;
