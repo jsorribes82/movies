@@ -48,7 +48,8 @@
 }
 .font_awesiwe:hover,font_awesiwe:focus{
     color: black;
-    font-size: 30px !important;
+    // font-size: 30px !important;
+    transform: scale(1.5);
 }
 .font_awesiwe_footer:hover, .font_awesiwe_footer:focus{
 	color: yellow;
