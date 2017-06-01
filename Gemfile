@@ -54,5 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "font-awesome-rails"
 gem 'devise', '~> 4.1', '>= 4.1.1'
-gem "bcrypt-ruby", '~> 3.0.0'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11', platforms: :ruby
 gem 'actioncable', '~> 5.0', '>= 5.0.3'
+gem 'autoprefixer-rails'
+gem "animate-rails"
