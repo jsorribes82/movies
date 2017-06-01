@@ -42,7 +42,7 @@
     font-weight:900
 
 }
-.font_awesiwe{
+.font_awesiwe, .font_awesiwe_footer{
 	font-size: 20px !important;
     color: white;
 }
@@ -50,6 +50,9 @@
     color: black;
     font-size: 30px !important;
 }
+.font_awesiwe_footer:hover, .font_awesiwe_footer:focus{
+	color: yellow;
+	}
 .font_awesiwe_about{
 	font-size: 30px !important;
 }
@@ -59,12 +62,15 @@
 .footer{
 	height: 90px;
 	padding-top: 33px;
+	padding-bottom: 82px;
     background-color: black;
     margin-left: -10px !important;
 	margin-right: -10px !important;
 }
 .footer p{
 	text-align: center;
+	color: white ;
+    font-weight:900
 }
 .boto_log_in{
 	background-color: #F2DF7E;
@@ -112,7 +118,7 @@
 	color: black;
     border-radius: 25px;
     display: inline-block;
-    
+
 }
 .tamanyMarques{
 	width: 16%;
