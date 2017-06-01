@@ -1,24 +1,12 @@
-<script type="text/javascript">
-	$(window).ready(function(){
-	$( "#imatgeJordi" ).hover(function() {
-	  
-	   $( "#imatgeJordi" ).attr("src","https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica_ulleres2.jpg");
-	  
-	},function() {
-	  
-	   $( "#imatgeJordi" ).attr("src","https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica.JPG");
-	  
-	}
-);
-	});
-</script>
+<%= render "shared/header" %>
+<%= render "shared/cargando" %>
 <div class="body">
 	<div class="container">
 	<h1>Sobre nosaltres</h1>
+	<h3 class="text-center titolTipograf">Desenvolupador</h3>
 	<div class="row">
-		<h3 class="text-center titolTipograf">Desenvolupador</h3>
 		<div class="col-lg-6 col-md-8 col-xs-12">
-			<img id="imatgeJordi" class="img-responsive center-block borde_foto" src="https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica.JPG">
+			<img id="imatgeJordi" class="img-responsive center-block borde_foto" src="https://s3.eu-west-2.amazonaws.com/boiledpotatoes/images/pica22.jpg">
 		</div>
 		<div class="col-lg-4 col-md-2 col-xs-10">
 			<p class="text-justify">En <strong>Jordi Sorribes</strong> es fill de Balaguer i porta 1 any com a software developer. Es aficionat a les pelicules i es per aixo que va crear aquesta web, per tenir informació sobre els gustos de la gent. Li agrada la cuina i no descarta la proxima pagina web sigui de temes culinaris.</p>
@@ -35,8 +23,8 @@
 		</div>
 	</div>
 	<hr>
+	<h3 class="titolTipograf">On som</h3>
 	<div class="row">
-		<h3 class="text-center titolTipograf">On som</h3>
 		<div class="col-md-8 col-xs-12">
 			<div class="google-maps">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95209.6816150918!2d0.7188494664841533!3d41.77869287561855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6f1a431e2692f%3A0x7f1575ac64410d62!2sBalaguer%2C+Lleida!5e0!3m2!1sca!2ses!4v1496160600048" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -48,3 +36,4 @@
 	</div>
 	</div>
 </div>
+<%= render "shared/footer" %>
