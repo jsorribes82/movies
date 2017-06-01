@@ -65,13 +65,13 @@
 	padding-top: 33px;
 	padding-bottom: 82px;
     background-color: black;
-    margin-left: 70px !important;
-    margin-right: 70px !important;
+    margin-left: -6px !important;
+    margin-right: -6px !important;
     border-radius: 20px;
 }
 .color_abans_footer{
   background-color: #D79D37;
-  
+
 }
 .footer p, .footer a{
 	text-align: center;
@@ -88,9 +88,7 @@
     border-radius: 25px;
 }
 .body{
-	border-left: 10px solid #D79D37;
-	border-right: 10px solid #D79D37;
-	border-bottom: 10px solid #D79D37;
+	border: 10px solid #D79D37;
 	margin-top: -20px;
 	padding-bottom: 54px;
 	padding-top: 20px;
@@ -133,4 +131,15 @@
 }
 .tamanyMarques{
 	width: 16%;
+}
+
+.box_device{
+    border: 2px solid #713904;
+    border-radius: 20px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background-color: #F4DF7D;
+    box-shadow: blue;
+    box-shadow: 10px 10px 5px #713904;
+    padding-bottom: 20px;
 }
